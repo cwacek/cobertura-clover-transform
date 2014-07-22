@@ -4,6 +4,7 @@ setup(
     name="cobertura-clover-transform",
     version='1.1b1',
     packages=find_packages(),
+    include_package_data=True,
     description="Tools for transforming Cobertura test "
                 "coverage XML into Clover-style XML",
     author='Chris Wacek',
