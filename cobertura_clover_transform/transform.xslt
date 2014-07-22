@@ -12,7 +12,6 @@
             <xsl:attribute name='timestamp'>
                 <xsl:value-of select='/coverage/@timestamp'/>
             </xsl:attribute>
-        </project>
         <xsl:apply-templates
             select='//classes'/>
         <xsl:variable name='ncloc' select='count(current()//line)'/>
@@ -28,6 +27,7 @@
             <xsl:with-param name='coveredelements'
                 select='number($ncloc) - count(current()//line[number(@hits) = 0])'/>
         </xsl:call-template>
+        </project>
     </coverage>
 </xsl:template>
 <xsl:template match="class">
