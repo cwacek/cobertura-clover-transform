@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cobertura-clover-transform",
-    version='1.0',
+    version='1.1b1',
     packages=find_packages(),
     description="Tools for transforming Cobertura test "
                 "coverage XML into Clover-style XML",
