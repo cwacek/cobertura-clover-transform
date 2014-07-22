@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cobertura-clover-transform",
-    version='1.1',
+    version='1.1.1',
     packages=find_packages(),
     include_package_data=True,
     description="Tools for transforming Cobertura test "
