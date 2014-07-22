@@ -17,8 +17,13 @@ def convert(inxml):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('coverage_xml')
+    parser.add_argument('-o', '--output', required=False)
     args = parser.parse_args()
 
     converted = convert(args.coverage_xml)
 
-    print(converted)
+    if args.output:
+        with open(args.output, 'w') as out:
+            out.write(converted)
+    else:
+        print(converted)
