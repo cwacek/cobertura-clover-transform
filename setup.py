@@ -7,6 +7,7 @@ setup(
     include_package_data=True,
     description="Tools for transforming Cobertura test "
                 "coverage XML into Clover-style XML",
+    install_requires=['lxml'],
     author='Chris Wacek',
     author_email='cwacek@gmail.com',
     url='http://github.com/cwacek/cobertura-clover-transform',
