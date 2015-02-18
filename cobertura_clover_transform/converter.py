@@ -24,6 +24,6 @@ if __name__ == '__main__':
 
     if args.output:
         with open(args.output, 'w') as out:
-            out.write(converted)
+            out.write(converted.decode())
     else:
         print(converted)
