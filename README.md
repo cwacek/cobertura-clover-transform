@@ -15,7 +15,7 @@ python setup.py install
 ```
 
 will install `cobertura-clover-transform` package and a command-line entry point 
-with the same name.
+scriptwith the same name into the current Python environment.
 
 How to run
 ----------
