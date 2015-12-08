@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cobertura-clover-transform",
-    version='1.1.2',
+    version='1.1.3',
     packages=find_packages(),
     include_package_data=True,
     description="Tools for transforming Cobertura test "
@@ -15,7 +15,7 @@ setup(
     keywords='cobertura coverage test clover xml',
     entry_points = {
         'console_scripts': [
-            'cobertura-clover-transform = cobertura_clover_transform.converter'
+            'cobertura-clover-transform=cobertura_clover_transform.converter:main'
         ]
     }
 )
