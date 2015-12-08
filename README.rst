@@ -1,26 +1,31 @@
 cobertura-clover-transform
 ==========================
 
-Tools for transforming Cobertura test coverage XML into Clover-style XML
+A tool for transforming Cobertura test coverage XML created by
+[coverage.py](http://nedbatchelder.com/code/coverage/) into Clover-style XML
+which can be displayed by [Atlassian Bamboo](https://www.atlassian.com/software/bamboo).
 
-As it turns out, the coverage created by `coverage.py <http://nedbatchelder.com/code/coverage/>`_
-outputs in Cobertura.
+Install
+-------
 
-`Bamboo <https://www.atlassian.com/software/bamboo>`_ has built in
-support for displaying Clover test coverage output.
+Running
 
-This tool can be used to convert Coverage.py output to a format
-Bamboo can display.
+```sh
+python setup.py install
+```
 
-To run
+will install `cobertura-clover-transform` package and a command-line entry point
+script with the same name into the current Python environment.
+
+How to run
 ------
 
 Easy peasy::
 
-    python -m cobertura_clover_transform.converter <xml_file>
+    cobertura-clover-transform <xml_file>
 
 The XML
 -------
 
-The transform is actually defined using an XSLT, which is inside
+The transform is actually defined using an XSLT, which is stored inside
 this repository. Feel free to use it for other purposes.
