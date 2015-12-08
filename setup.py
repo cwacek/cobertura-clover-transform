@@ -12,5 +12,10 @@ setup(
     author_email='cwacek@gmail.com',
     url='http://github.com/cwacek/cobertura-clover-transform',
     license='MIT',
-    keywords='cobertura coverage test clover xml'
+    keywords='cobertura coverage test clover xml',
+    entry_points = {
+        'console_scripts': [
+            'cobertura-clover-transform = cobertura_clover_transform.converter'
+        ]
+    }
 )
