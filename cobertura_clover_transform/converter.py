@@ -29,4 +29,4 @@ def main():
         with open(args.output, 'w') as out:
             out.write(converted.decode())
     else:
-        print(converted)
+        print(converted.decode())
